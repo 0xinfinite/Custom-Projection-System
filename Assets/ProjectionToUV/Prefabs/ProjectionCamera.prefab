@@ -1,0 +1,102 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5728850969302166489
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5728850969302166485}
+  - component: {fileID: 5728850969302166484}
+  - component: {fileID: 5728850969302166486}
+  m_Layer: 0
+  m_Name: ProjectionCamera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5728850969302166485
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5728850969302166489}
+  m_LocalRotation: {x: 0.24301495, y: -0.46221924, z: 0.13321814, w: 0.84234786}
+  m_LocalPosition: {x: 1.9556091, y: 1.0920246, z: -1.1158795}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 40.348003, y: 87.704, z: 0.003}
+--- !u!20 &5728850969302166484
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5728850969302166489}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 1, g: 1, b: 1, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 35
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: -1.5
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 1
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!114 &5728850969302166486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5728850969302166489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 521da839f41ab014da030ca37045e2e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 5728850969302166484}
+  depthMap: {fileID: 8400000, guid: 5cc031e2a38792a43afd99f0407117ed, type: 2}
+  _uvMaskMaterial: {fileID: 2100000, guid: 35deef5e1daf827488897b9abc661873, type: 2}
+  renderSet:
+  - render: {fileID: 0}
+    captureTex: {fileID: 8400000, guid: 65fb5c7e7f7f32a459efd35aed60893f, type: 2}
+    dilateTex: {fileID: 0}
+  - render: {fileID: 0}
+    captureTex: {fileID: 8400000, guid: 3a6a36f0d2f8ff949ac8eb830c458b17, type: 2}
+    dilateTex: {fileID: 8400000, guid: 1aa18db927e1b214fab31bdef827eb9c, type: 2}
+  dilateMat: {fileID: 2100000, guid: 37fc8f67b209f2448a8c0eba2d09d719, type: 2}
+  _tex: {fileID: 0}
+  _renderTex: {fileID: 0}
